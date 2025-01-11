@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container{
+    @apply flex justify-center items-center h-screen m-5;
+}
+.form{
+    @apply m-5 flex flex-col w-[50%] shadow-xl p-5 rounded-md border-solid border-2 border-gray-300 mt-8;
+}
+input{
+    @apply mb-2 p-2 rounded-md border-solid border-2 border-gray-300;
+}
+.boton_agregar{
+    @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
+}
+.table{
+    @apply m-5 w-[50%] shadow-xl p-5 rounded-xl border-solid border-2 border-gray-300;
+}
+th{
+    @apply p-3 bg-slate-800 text-white;
+}
+td{
+    @apply p-3;
+}
+.btn-eliminar{
+    @apply bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-1 rounded;
+}
