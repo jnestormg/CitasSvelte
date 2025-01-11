@@ -8,6 +8,7 @@
     <a href="/">home</a>
     <a href="/pacientes">Pacientes</a>
     <a href="/medicos">medicos</a>
+    <a href="/citas">citas</a>
   </nav>
 </div>
 

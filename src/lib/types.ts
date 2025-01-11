@@ -19,6 +19,7 @@ export type Medico={
     nombre: string;
     apellido: string;
     cedula: string;
+    telefono: string ;
     domicilio: {
         calle: string;
         numero: string;  
@@ -38,3 +39,11 @@ export type Especialidades={
     descripcion: string;
 }
 
+export type Cita={
+    ID: number;
+    fecha: string;
+    motivo: string;
+    estado: string;
+    paciente_id: number;
+    medico_id: number;
+}

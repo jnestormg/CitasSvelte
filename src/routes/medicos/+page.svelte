@@ -17,6 +17,7 @@
     nombre: "",
     apellido: "",
     cedula: "",
+    telefono: "",
     domicilio: {
       calle: "",
       numero: "",
@@ -75,6 +76,7 @@
         <th>Nombre</th>
         <th>Apellido</th>
         <th>Cedula</th>
+        <th>Telefono</th>
         <th>Calle</th>
         <th>Número</th>
         <th>Ciudad</th>
@@ -89,6 +91,7 @@
           <td>{medico.nombre}</td>
           <td>{medico.apellido}</td>
           <td>{medico.cedula}</td>
+          <td>{medico.telefono}</td>
           <td>{medico.domicilio.calle}</td>
           <td>{medico.domicilio.numero}</td>
           <td>{medico.domicilio.ciudad}</td>
@@ -107,6 +110,7 @@
     <input type="text" bind:value={newMedico.nombre} placeholder="Nombre" />
     <input type="text" bind:value={newMedico.apellido} placeholder="Apellido" />
     <input type="text" bind:value={newMedico.cedula} placeholder="Cedula" />
+    <input type="text" bind:value={newMedico.telefono} placeholder="Telefono" />
     <input
       type="text"
       bind:value={newMedico.domicilio.calle}
