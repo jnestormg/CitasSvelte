@@ -42,5 +42,14 @@ const actualizarPaciente = async (id: number, paciente: Paciente) => {
     }
 }
 
-export {mostrarPacientes, agregarPaciente, eliminarPaciente, actualizarPaciente};
+const obtenerPacientePorNombre = async (nombre: string) => {
+    try {
+        const response = await axios.get(`${url}/busqueda/${nombre}`);
+        return response.data;
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+export {mostrarPacientes, agregarPaciente, eliminarPaciente, actualizarPaciente, obtenerPacientePorNombre};
    

@@ -41,7 +41,7 @@ export type Especialidades={
 
 export type Cita={
     ID: number;
-    fecha: string;
+    fecha: null | Date;
     motivo: string;
     estado: string;
     paciente_id: number;

@@ -10,4 +10,13 @@ const mostrarEspecialidades = async () => {
     }
 }
 
-export {mostrarEspecialidades}
+const BuscarEspecialidadPorNombreEspecialidad = async ( nombreEspecialidad: string) => {
+    try {
+        const response = await axios.get(`${url}/nombre/${nombreEspecialidad}`);
+        return response.data;
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+export {mostrarEspecialidades, BuscarEspecialidadPorNombreEspecialidad};
